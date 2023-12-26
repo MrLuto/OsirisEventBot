@@ -17,7 +17,7 @@ let lesson_class;
 // ### create_discord_event ###
 function create_discord_event(data, auth){
   console.log(data);
-  TodayRooster = data["items"][2]["dagen"][d.getDay()]["rooster"]
+  TodayRooster = data["items"][0]["dagen"][d.getDay()]["rooster"]
   TodayRooster.forEach((lesson) => {
     console.log(lesson);
     if (lesson.tijd_vanaf.length == 4) {
@@ -71,8 +71,7 @@ client.on('ready', async () => {
   guild = await client.guilds.fetch(process.env.guild_id);
   event_manager = new GuildScheduledEventManager(guild);
 
-  fetchrequest(process.env.auth1);
-  fetchrequest(process.env.auth2);
+  fetchrequest(process.env.auth);
   
   console.log("done") 
 });
