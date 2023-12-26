@@ -16,7 +16,7 @@ This Node.js bot, developed collaboratively by [@MrLuto](https://github.com/MrLu
 
 To use the bot, follow these steps:
 
-Clone the repository: ```git clone [repository_url]```
+Clone the repository: ```git clone https://github.com/MrLuto/OsirisEventBot.git```
 
 Install dependencies: ```npm install```
 
